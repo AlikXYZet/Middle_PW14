@@ -14,7 +14,7 @@ public:
 	void Attack() { std::cout << " Атакует"; }
 };
 
-// Интерфейс "Команды"
+// Абстрактный класс "Команды"
 class Command abstract
 {
 protected:
@@ -24,7 +24,8 @@ public:
 	virtual void Execute() const = 0;
 };
 
-// "Команда": Ко мне
+/*   Конкретные Команды   */
+// Команда: Ко мне
 class CComeHere : public Command
 {
 public:
@@ -38,7 +39,7 @@ public:
 		actions->Stand();
 	}
 };
-// "Команда": Лежать
+// Команда: Лежать
 class CDown : public Command
 {
 public:
@@ -52,7 +53,7 @@ public:
 		actions->Lie();
 	}
 };
-// "Команда": Голос
+// Команда: Голос
 class CBark : public Command
 {
 public:
@@ -64,7 +65,7 @@ public:
 		actions->Howl();
 	}
 };
-// "Команда": Взять
+// Команда: Взять
 class CFetch : public Command
 {
 public:
@@ -169,6 +170,6 @@ int main1()
 }
 
 /*   Вывод:
-* Патерн позволяет откладывать выполнение команд, выстраивать их в очереди,
-* а также хранить историю и делать отмену.
+* Патерн "Команда" позволяет откладывать выполнение "Команд",
+* выстраивать их в очередь, а также хранить историю и делать отмену.
 */

@@ -53,9 +53,9 @@ public:
 	}
 };
 
-/*   Интерфейс "Субъекта" ("Subject")   */
-// Интерфейс События
-class IEvent
+/*   "Субъект" ("Subject")   */
+// События
+class Event
 {
 private:
 	// Список "Подписчиков"
@@ -69,11 +69,11 @@ private:
 
 public:
 	// Конструктор
-	IEvent(std::string inName)
-		: IEvent(inName, EEventType::Weak)
+	Event(std::string inName)
+		: Event(inName, EEventType::Weak)
 	{}
 
-	IEvent(std::string inName, EEventType inType)
+	Event(std::string inName, EEventType inType)
 		: Name(inName), Type(inType)
 	{}
 
@@ -98,9 +98,9 @@ public:
 int main4()
 {
 	// Инициализация событий
-	IEvent Whistling("Свист");
-	IEvent Bang("Сильный хлопок", EEventType::Strong);
-	IEvent PoliceSiren("Полицейская сирена", EEventType::Police);
+	Event Whistling("Свист");
+	Event Bang("Сильный хлопок", EEventType::Strong);
+	Event PoliceSiren("Полицейская сирена", EEventType::Police);
 
 	// Инициализация Существ
 	C_Dog Dog;

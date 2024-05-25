@@ -2,7 +2,7 @@
 #include "0. Testing.h"
 
 //Выбор по умолчанию
-int DefaultSelection = 4;
+int DefaultSelection = 5;
 
 bool MainSelection(int sel)
 {
