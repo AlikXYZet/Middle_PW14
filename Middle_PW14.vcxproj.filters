@@ -30,7 +30,7 @@
     <ClCompile Include="4. Observer.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="5 NONE.cpp">
+    <ClCompile Include="5. Memento.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>

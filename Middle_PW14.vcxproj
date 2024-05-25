@@ -144,7 +144,7 @@
     <ClCompile Include="2. State.cpp" />
     <ClCompile Include="3. Visitor.cpp" />
     <ClCompile Include="4. Observer.cpp" />
-    <ClCompile Include="5 NONE.cpp" />
+    <ClCompile Include="5. Memento.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="0. Testing.h" />
